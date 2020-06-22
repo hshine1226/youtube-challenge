@@ -1,16 +1,16 @@
 import express from "express";
 import {
   getHome,
-  getJoin,
   getLogin,
-  getConfirm
+  getPhotos,
+  getProfile
 } from "../src/controllers/globalController";
 
 const globalRouter = express.Router();
 
 globalRouter.get("/", getHome);
-globalRouter.get("/join", getJoin);
 globalRouter.get("/login", getLogin);
-globalRouter.get("/confirm-account", getConfirm);
+globalRouter.get("/photos", getPhotos);
+globalRouter.get("/profile", getProfile);
 
 export default globalRouter;
