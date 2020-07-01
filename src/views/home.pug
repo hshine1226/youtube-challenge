@@ -1,0 +1,7 @@
+extends layouts/main
+
+block content
+  ul
+    each movie in movies
+      li
+        a(href=`/${movie._id}`)=movie.title

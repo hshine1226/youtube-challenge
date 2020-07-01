@@ -1,0 +1,10 @@
+extends layouts/main
+
+block content
+  form(action="/create", method="post")
+    input(type="text", name="title", placeholder="Title", required)
+    input(type="text", name="year", placeholder="Year", required)
+    input(type="text", name="rating", placeholder="Rating", required)
+    textarea(name="synopsis", cols="30", rows="3", placeholder="Synopsis", required)
+    input(type="text", name="genres", placeholder="Genres", required)
+    button(type="submit") Submit
